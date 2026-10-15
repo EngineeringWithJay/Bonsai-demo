@@ -10,7 +10,7 @@ RTX A4000 16 GB (GA104, Ampere pro), driver 580.173.02, ~$0.116/hr on vast.ai. l
 | `PTQ1_0` (5.53 GiB) | 769.94 ± 22.99 | 49.49 ± 0.11 |
 | `PQ2_0` (6.70 GiB) | 758.24 ± 19.84 | 42.42 ± 0.10 |
 
-`PTQ1_0` edges prefill and takes decode — consistent with the consumer-Ampere (3090 Ti) and desktop-Volta pattern above. 16 GB leaves room for longer context with the 5.53 GiB file.
+On this RTX A4000, `PTQ1_0` has higher measured means for both tests. This matches the TITAN V report, but contrasts with the existing RTX 3090 Ti report, where `PQ2_0` leads both columns. Hardware, binary builds, and runtime settings differ between submissions, so these comparisons do not isolate an architecture-level cause; select the band from measurements on the intended setup.
 
 ## Configuration
 

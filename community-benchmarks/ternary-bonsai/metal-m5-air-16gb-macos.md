@@ -8,7 +8,7 @@ Base-model M5 Air (16 GB unified, recommendedMaxWorkingSetSize ~12.7 GB). Three 
 |------|-------|------------:|------------:|
 | `Q2_g64` (7.05 GiB) | upstream llama.cpp **b11630** | 80.22 ± 0.38 | 6.68 ± 0.18 |
 | legacy `Q2_0` group-128 (6.66 GiB) | fork **prism-b9596** | 34.05 ± 1.70 | 6.06 ± 0.52 |
-| 1-bit `Q1_0` (3.53 GiB) | upstream b11630 → see [../bonsai/metal-m5-air-16gb-macos.md](../bonsai/metal-m5-air-16gb-macos.md) | 84.18 | 11.54 |
+| 1-bit `Q1_0` (3.53 GiB) | upstream b11630 → see [../bonsai/metal-m5-air-16gb-macos.md](../bonsai/metal-m5-air-16gb-macos.md) | 84.18 ± 0.36 | 11.54 ± 0.08 |
 
 ## Configuration
 
@@ -19,7 +19,7 @@ Base-model M5 Air (16 GB unified, recommendedMaxWorkingSetSize ~12.7 GB). Three 
 
 ## Notes
 
-- Passively cooled Air; 3-rep medians. The cross-build pp512 gap (34.05 b9596 vs 80.22 b11630) is NOT a controlled format comparison — build and file differ together; treat as two independent rows.
+- Passively cooled Air; reported as llama-bench 3-rep mean ± std. dev. The cross-build pp512 gap (34.05 b9596 vs 80.22 b11630) is NOT a controlled format comparison — build and file differ together; treat as two independent rows.
 - 27B ternary is usable-but-warm on a $999 laptop; the same box's Bonsai-2 and 1-bit entries show better decode.
 
 ## Hardware

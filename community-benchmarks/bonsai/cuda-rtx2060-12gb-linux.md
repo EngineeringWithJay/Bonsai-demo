@@ -12,8 +12,7 @@ RTX 2060 12 GB (TU106, Turing sm_75; driver 580.178.04; ~$0.100/hr) measured wit
 ## Configuration
 
 - fork `prism-b10777-e3de715` CUDA-12.4
-- Model: `prism-ml/Ternary-Bonsai-27B-gguf` — `Ternary-Bonsai-27B-Q2_g64.gguf` sha256 `59a45d1ecef702b14531b06d22949f33b25c1897da31a8c0b298e01e4d9138eb` (digest identical across the whole fleet).
-- Per the formats guide, current builds expect `PQ2_0` (group-128) **and** `Q2_0` group-64; this entry measures the group-64 file on a current fork build. `PQ2_0` (this gen) not yet run — follow-up planned.
+- Model: `prism-ml/Bonsai-27B-gguf` — `Bonsai-27B-Q1_0.gguf` sha256 `17ef842e47450caeb8eaa3ebfbbab5d2f2278b62b79be107985fb69a2f819aa0` (digest identical across the whole fleet).
 - Rented pod destroyed after capture; ± = llama-bench dispersion over 3 reps.
 
 ## Notes

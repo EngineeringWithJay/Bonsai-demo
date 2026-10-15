@@ -18,7 +18,7 @@ between the gen-1 paths while keeping the smallest 27B ternary footprint at 5.53
 
 - `prism-ml/Ternary-Bonsai-2-27B-gguf`; sha256 `53107f53…` (PTQ1_0), `3907dc16…` (PQ2_0) — same digests as the CUDA machines.
 - Upstream b11630 refuses both files (`llama_model_load: error loading model`) — fork-only bands, clean refusal.
-- Passively cooled Air; 3-rep medians, not sustained thermals.
+- Passively cooled Air; reported as llama-bench 3-rep mean ± std. dev., not sustained thermals.
 
 ## Hardware
 

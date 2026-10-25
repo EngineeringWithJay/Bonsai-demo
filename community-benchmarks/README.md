@@ -13,8 +13,10 @@ for commands, raw output, memory use, and configuration.
 |--------|----------|---------|------------:|------------:|---------|
 | `PQ2_0` | NVIDIA RTX 5090 32 GB | llama.cpp CUDA 12.8 (Linux) | 4,075 | 143.0 | [link](bonsai2/cuda-rtx5090-linux.md) |
 | `PTQ1_0` | NVIDIA RTX 5090 32 GB | llama.cpp CUDA 12.8 (Linux) | 4,117 | 133.0 | [link](bonsai2/cuda-rtx5090-linux.md) |
+| `PTQ1_0` | NVIDIA RTX 5070 Ti 16 GB | llama.cpp CUDA 13.3 (Windows) | 1,959 | 99.3 | [link](bonsai2/cuda-rtx5070ti-16gb-windows.md) |
 | `PQ2_0` | NVIDIA RTX 5080 16 GB | llama.cpp CUDA 13.3 (Windows) | 2,345 | 92.5 | [link](bonsai2/cuda-rtx5080-16gb-windows.md) |
 | `PTQ1_0` | NVIDIA RTX 5080 16 GB | llama.cpp CUDA 13.3 (Windows) | 1,017 | 89.3 | [link](bonsai2/cuda-rtx5080-16gb-windows.md) |
+| `PQ2_0` | NVIDIA RTX 5070 Ti 16 GB | llama.cpp CUDA 13.3 (Windows) | 2,045 | 86.9 | [link](bonsai2/cuda-rtx5070ti-16gb-windows.md) |
 | `PTQ1_0` | NVIDIA RTX 4090 24 GB | llama.cpp CUDA (Windows) | 1,597 | 86.0 | [link](bonsai2/cuda-rtx4090-windows.md) |
 | `PQ2_0` | NVIDIA RTX 4090 24 GB | llama.cpp CUDA (Windows) | 3,285 | 84.9 | [link](bonsai2/cuda-rtx4090-windows.md) |
 | `PQ2_0` | NVIDIA RTX 3090 Ti 24 GB | llama.cpp CUDA (Linux) | 1,552 | 81.6 | [link](bonsai2/cuda-rtx3090ti-linux.md) |
@@ -23,20 +25,27 @@ for commands, raw output, memory use, and configuration.
 | `PTQ1_0` | NVIDIA RTX A4000 16 GB | llama.cpp CUDA 12.4 (Linux, fork b10777) | 769.9 | 49.49 | [link](bonsai2/cuda-rtxa4000-16gb-linux.md) |
 | `PQ2_0` (MTP bundle, plain inference) | AMD Radeon RX 9070 XT 16 GB | llama.cpp ROCm/HIP (Proxmox) | 1,258 | 48.64 | [link](bonsai2/rocm-hip-rx9070xt-proxmox.md) |
 | `PQ2_0` | AMD Radeon RX 9070 XT 16 GB | llama.cpp ROCm/HIP (Proxmox) | 1,259 | 48.53 | [link](bonsai2/rocm-hip-rx9070xt-proxmox.md) |
+| `PTQ1_0` | Intel Arc B580 12 GB | llama.cpp SYCL, oneAPI 2026.1 (Linux) | 1,593 | 47.9 | [link](bonsai2/sycl-arc-b580-linux.md) |
 | `PQ2_0` | AMD Radeon RX 7800 XT 16 GB | llama.cpp ROCm/HIP | 316.3 | 46.8 | [link](bonsai2/rocm-hip-rx7800xt-fedora44.md) |
 | `PQ2_0` | NVIDIA TITAN V 12 GB | llama.cpp CUDA 12.4 (Linux, fork b10777) | 528.2 | 46.66 | [link](bonsai2/cuda-titanv-12gb-linux.md) |
 | `PQ2_0` | NVIDIA Tesla V100-SXM2 16 GB | llama.cpp CUDA (Windows) | 798 | 46.0 | [link](bonsai2/cuda-tesla-v100-windows.md) |
+| `PTQ1_0` | Intel Arc B580 12 GB | llama.cpp SYCL (Windows, community fork) | 1,560 | 45.89 | [link](bonsai2/sycl-arc-b580-12gb-windows.md) |
+| `PQ2_0` | Intel Arc B580 12 GB | llama.cpp SYCL (Windows, community fork) | 1,533 | 45.87 | [link](bonsai2/sycl-arc-b580-12gb-windows.md) |
 | `PQ2_0` | AMD Radeon RX 6800 XT 16 GB | llama.cpp ROCm/HIP (Windows) | 266.4 | 44.9 | [link](bonsai2/rocm-hip-rx6800xt-windows.md) |
 | `PQ2_0` | NVIDIA RTX 3070 8 GB | llama.cpp CUDA (Windows) | 838.9 | 43.7 | [link](bonsai2/cuda-rtx3070-8gb-windows.md) |
 | `PQ2_0` | NVIDIA RTX A4000 16 GB | llama.cpp CUDA 12.4 (Linux, fork b10777) | 758.2 | 42.42 | [link](bonsai2/cuda-rtxa4000-16gb-linux.md) |
+| `PTQ1_0` | Intel Arc B580 12 GB | llama.cpp Vulkan (Windows, PrismML fork) | 380 | 34.84 | [link](bonsai2/vulkan-arc-b580-12gb-windows.md) |
 | `PTQ1_0` | NVIDIA Tesla V100-SXM2 16 GB | llama.cpp CUDA (Windows) | 852 | 34.3 | [link](bonsai2/cuda-tesla-v100-windows.md) |
 | `PTQ1_0` | NVIDIA RTX 4070 Laptop 8 GB | llama.cpp CUDA (Windows) | 435.60 | 32.44 | [link](bonsai2/cuda-rtx4070-laptop-windows.md) |
+| `Q2_0` (development) | Intel Arc B580 12 GB | llama.cpp Vulkan (Windows, PrismML fork) | 568 | 31.59 | [link](bonsai2/vulkan-arc-b580-12gb-windows.md) |
+| `PQ2_0` | Intel Arc B580 12 GB | llama.cpp Vulkan (Windows, PrismML fork) | 559 | 28.59 | [link](bonsai2/vulkan-arc-b580-12gb-windows.md) |
 | `2-bit` | Apple M3 Max 48 GB | MLX (mlx 0.32.2, mlx-vlm 0.6.17) | 165.9 | 27.1 | [link](bonsai2/mlx-m3-max-48gb-macos.md) |
 | `PQ2_0` | Apple M3 Max 36 GB | llama.cpp Metal | 162.2 | 24.3 | [link](bonsai2/metal-m3-max-36gb-macos.md) |
 | `PQ2_0` | AMD BC-250 16 GB UMA | llama.cpp Vulkan (Linux, local patches) | 142.58 | 24.11 | [link](bonsai2/vulkan-bc250-linux.md) |
 | `PQ2_0` | Tesla P40 24 GB | llama.cpp CUDA 12.4 (Linux, fork b10777) | 254.4 | 23.16 | [link](bonsai2/cuda-teslap40-24gb-linux.md) |
 | `PTQ1_0` | Apple M3 Max 36 GB | llama.cpp Metal | 136.8 | 21.9 | [link](bonsai2/metal-m3-max-36gb-macos.md) |
 | `PTQ1_0` | Tesla P40 24 GB | llama.cpp CUDA 12.4 (Linux, fork b10777) | 139.9 | 19.86 | [link](bonsai2/cuda-teslap40-24gb-linux.md) |
+| `Q2_0` (development) | Intel Arc B580 12 GB | llama.cpp SYCL (Windows, community fork) | 770 | 10.26 | [link](bonsai2/sycl-arc-b580-12gb-windows.md) |
 | `PQ2_0` | Apple M5 (Air) 16 GB | llama.cpp Metal (fork b10777) | 88.8 | 7.82 | [link](bonsai2/metal-m5-air-16gb-macos.md) |
 | `PTQ1_0` | Apple M5 (Air) 16 GB | llama.cpp Metal (fork b10777) | 79.7 | 7.03 | [link](bonsai2/metal-m5-air-16gb-macos.md) |
 

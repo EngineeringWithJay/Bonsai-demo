@@ -9,7 +9,7 @@ $VenvPy  = Join-Path $VenvDir "Scripts\python.exe"
 
 # v7 binaries read the official group-64 Q2_0 files and PQ2_0; they do NOT read
 # the legacy *-Q2_0.gguf files that pre-v7 releases used.
-$ReleaseTag = "prism-b10787-73bfe6c"
+$ReleaseTag = "prism-b10826-c9c34bc"
 $BaseUrl = "https://github.com/PrismML-Eng/llama.cpp/releases/download/$ReleaseTag"
 
 $BonsaiModel  = if ($env:BONSAI_MODEL)  { $env:BONSAI_MODEL }  else { "27B" }
@@ -167,7 +167,8 @@ if (Test-Path $VenvPy) {
 
 # ── 5. Install Python deps ──
 Write-Host "==> Installing Python dependencies ..." -ForegroundColor Cyan
-uv pip install --python $VenvPy huggingface-hub
+uv pip install --python $VenvPy huggingface-hub "certifi>=2026.10.23"
+if ($LASTEXITCODE -ne 0) { throw "Failed to install Python dependencies." }
 Write-Host "[OK] Dependencies installed." -ForegroundColor Green
 
 # ── 6. Detect GPU: NVIDIA (CUDA) or AMD (HIP) ──
